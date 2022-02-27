@@ -36,11 +36,11 @@ public class TestBase {
 		String browserName = prop.getProperty("Browser");
 		if (browserName.equalsIgnoreCase("FireFox")) {
 			System.setProperty("webdriver.gecko.driver",
-					"C://Users//Pranav Jyoti Vihaan//Selenium tutorial//Installer//Drivers//geckodriver.exe");
+					"C://Users//Pranav Jyoti Vihaan//Selenium tutorial//Drivers//geckodriver.exe");
 			driver = new FirefoxDriver();
 		} else if (browserName.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"C://Users//Pranav Jyoti Vihaan//Selenium tutorial//Installer//Drivers//chromedriver.exe");
+					"C://Users//Pranav Jyoti Vihaan//Selenium tutorial//Drivers//chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		driver.manage().window().maximize();
